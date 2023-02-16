@@ -105,6 +105,7 @@ class LinkedList:
     def list_to_linked(self, a_list):
         for item in a_list:
             llist.add_first(Node(str(item)))
+        
 
 
 class Node:
@@ -120,4 +121,4 @@ llist = LinkedList()
 
 a_list = [9, 5, 32, 211, 3, 72, 343]
 llist.list_to_linked(a_list)
-print(llist)
+# print(llist)
