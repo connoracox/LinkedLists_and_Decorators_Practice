@@ -92,12 +92,10 @@ class LinkedList:
     def decorate_print(func):
         
         def inner(self, a_list):
-            result = []
+            a_list.sort()
             func(self, a_list)
     
-            for item in a_list:
-                result.append(item)
-            print(sorted(result)) 
+            
         
         return inner
 
@@ -121,4 +119,4 @@ llist = LinkedList()
 
 a_list = [9, 5, 32, 211, 3, 72, 343]
 llist.list_to_linked(a_list)
-# print(llist)
+print(llist)
